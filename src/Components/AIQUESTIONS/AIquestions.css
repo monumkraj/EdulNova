@@ -1,0 +1,364 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /* margin-top: 20px; */
+  margin-top: 50px;
+}
+
+.ai-questions-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 150vh;
+  width: 100vw;
+  margin-top: -50px;
+  margin: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* background: linear-gradient(to left, #795ed3 20%, #260c5c 80%); */
+  /* background-image: url(../../assets/wave.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.container .ai-questions-container {
+  margin-top: -50px;
+}
+.topic-form h2,
+.question-type-selection h2,
+.question-section h2,
+.query-section h3,
+.feature-selection h2 {
+  color: rgb(35, 32, 32);
+  font-size: 32px;
+  font-style: italic;
+}
+.feature-selection {
+  background-color: aqua;
+}
+#feature-id {
+  color: black;
+}
+.heading {
+  color: rgb(14, 7, 7);
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  /* filter: drop-shadow(4px 4px 4px #); */
+  /* filter: drop-shadow(4px 4px 4px #7F52FF); */
+}
+.p1 {
+  color: rgb(23, 6, 6);
+  margin-left: 6%;
+  margin-top: -15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 10%;
+    opacity: 0.5;
+  }
+
+  50% {
+    width: 80%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+.topic-form p,
+.question-type-selection p,
+.question-section p {
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: black;
+  /* animation: lineAnimation 5s ease-in-out; */
+  box-shadow: 4px 4px 4px #7f52ff;
+  padding: 2px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.input-container {
+  display: inline-block;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  width: 100%;
+}
+
+input[type="text"],
+textarea,
+#file-upload {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: padding 0.1s ease, width 0.3s ease;
+}
+
+#file-upload {
+  cursor: pointer;
+}
+
+input[type="text"]::placeholder {
+  font-size: 15px;
+  color: #999;
+  transition: font-size 0.3s ease;
+}
+
+.input-container:hover input[type="text"] {
+  width: 100%;
+}
+
+button {
+  background-color: #140a46;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 16px;
+  transition: transform 200ms;
+}
+
+button:hover {
+  background-color: #2a0d66;
+  transform: scale(1.03);
+  /* filter: drop-shadow(4px 4px 4px #7f52ff); */
+}
+.feature-selection {
+  background-color: rgb(229, 215, 215);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.question-type-buttons button {
+  margin: 6px;
+  /* font-size: 20px; */
+  padding: 25px;
+  height: 110px;
+  width: 210px;
+  transition: transform 200ms;
+}
+
+.question-type-buttons button:hover {
+  transform: scale(1);
+}
+
+/* question-type-buttons {
+     position: relative;
+   } */
+
+/* .ar {
+     position: absolute;
+     right: 235px;
+   } */
+
+.diagram-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#eback {
+  margin: -60px;
+}
+
+.back-button {
+  background-color: #140a46;
+  margin-bottom: 30px;
+}
+
+.back-button:hover {
+  background-color: #2a0d66;
+}
+
+.question-section .submit-button {
+  background-color: #23125b;
+}
+
+.question-section .submit-button:hover {
+  background-color: #25185c;
+}
+
+.matching-pair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.matching-pair span {
+  flex: 1;
+}
+
+.topic-selection,
+.feature-selection {
+  color: black;
+}
+
+.first .topic-form,
+.question-type-selection,
+.question-section,
+.topic-or-file-selection,
+.topic-selection,
+.feature-selection,
+.query-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 6px 8px #7f52ff;
+  background-image: url("https://img.freepik.com/free-photo/elevated-view-licorice-candies-forming-frame-contract-green-background_23-2147877647.jpg?t=st=1724602222~exp=1724605822~hmac=4d69e2013fd0d5628fd50ba5967b6abca81cacd359a8d4dcdbddd3de89bbac1d&w=996");
+  border-radius: 20px;
+  position: relative;
+  width: 50%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.question-type-selection form {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.question-type-selection form select {
+  font-size: 20px;
+}
+
+.mcq-option {
+  font-size: 30px;
+  margin-left: 0.5em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio input[type="radio"] + label {
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.custom-radio input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  /* border: 2px solid #000;  */
+}
+
+.custom-radio input[type="radio"]:checked + label::before {
+  background-color: #795ed3;
+}
+
+.topic-selection {
+  font-size: 20px;
+}
+
+.topic-selection h3,
+.feature-selection h2,
+.query-section h3 {
+  font-size: 40px;
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.feature-buttons button {
+  font-size: 32px;
+  margin: 4px;
+  padding: 12px 25px;
+  border-radius: 10px;
+}
+
+.feature-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-bottom: 10px;
+}
+
+.assertion-reasoning-question {
+  margin-bottom: 10px;
+}
+
+.next-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.assertion-reasoning-question p {
+  margin-bottom: 5px;
+}
+
+.or {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.top-corner-back-button {
+  position: absolute;
+  top: 30px;
+  /* Adjust as necessary */
+  left: 30px;
+  /* Adjust as necessary */
+  /* Adjust size of the image */
+  width: 24px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.top-corner-back-button:hover {
+  background-color: #795ed3;
+}
+
+.back-to-home-button {
+  position: absolute;
+
+  margin-top: 10px;
+  /* left: 30px; */
+  margin-left: 40px;
+  width: 24px;
+  background-color: white;
+  cursor: pointer;
+  /* top: 80px; */
+}

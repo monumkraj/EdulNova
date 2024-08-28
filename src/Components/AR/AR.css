@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  /* height: 100vh; 
+  width: 100vw;  */
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+}
+
+.sidebar {
+  width: 20%; /* Fixed width */
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(8, 7, 7, 0.1);
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.qa-pane {
+  flex: 1; /* Takes up the remaining space */
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.qa-pane h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.questions .question-type {
+  margin-top: -50px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questions .question-type h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.options input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Example color */
+}
+
+.feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.extras {
+  width: 20%; /* Fixed width */
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.extras h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.extras ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extras ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
